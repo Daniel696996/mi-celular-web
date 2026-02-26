@@ -22,3 +22,18 @@ function irAlInicio() {
     document.getElementById(`display-text`).innerText = "Welcome to my website";
     alert("you returned to the home page");
 }
+
+async function abrirCamara() {
+    const video = document.getElementById(`video`);
+    const display = document.getElementById(`display-text`);
+
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        video.srcObject = stream;
+        video.style.display = `block`;
+        display.innerText = "Sonrie";
+    } catch (error) {
+        console.error("Error al acceder a la camara: ", error);
+        display.innerText = "Error permiso denegado";
+    }
+}
