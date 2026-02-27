@@ -9,8 +9,8 @@ body{
 }
 
 .smartphone {
-    width: 300px;
-    height: 600px;
+    width: 250px;
+    height: 545px;
     background-color: #ecf0f1;
     border-radius: 40px;
     border: 8px solid #333;
@@ -28,26 +28,122 @@ body{
     background-color: white;
     border-radius: 32px;
     overflow: hidden;
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-}
-
-.status-bar {
-    width:90%;
-    display: flex;
     justify-content: space-between;
-    font-size: 12px;
-    margin-bottom: 50px;
 }
 
-.home-buttom {
-    width: 50px;
-    height: 50px;
-    background-color: #ddd;
+.icono-camara{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.lente{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diafragma{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(65, 63, 63);
+    border-radius: 100%;
+}
+
+.status-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+#clock{
+    width: 50%;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+.carga{
+    width: 50%;
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    padding-left: 10px;
+}
+
+#app-content{
+    font-family: 'Times New Roman', Times, serif;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.magic-botton{
+    width: 50%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}
+
+.magic-botton:hover {
+    background-color: #212f3d;
+    width: 52%;
+}
+
+#display-text{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+
+}
+
+.home-button {
+    width: 90px;
+    height: 30px;
     border-radius: 50%;
-    position: absolute; 
     bottom: 10px;
     cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.home-button:hover {
+    background-color: #212f3d;
+    width: 95px;
 }

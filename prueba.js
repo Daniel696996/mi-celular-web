@@ -3,8 +3,7 @@ function updateClock() {
     const time = now.getHours() + ":" + now.getMinutes().toString().padStart(2, `0`);
     document.getElementById(`clock`).innerText = time;
 }
-setInterval(updateClock, 1000);
-updateClock();
+setInterval(updateClock(), 1000);
 
 function mostrarFrase() {
     const frases = [

@@ -7,25 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="smartphone">
-    <div class="screen">
-        <div class="status-bar"></div>
-        <span id="clock">12:00</span>
-        <span>🔋 100%</span>
+    <div class="smartphone">
+        <div class="screen">
+            <div class="icono-camara">
+                <div class="lente">
+                    <div class="diafragma"></div>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span id="clock">12:00</span>
+                <span class="carga">🔋 100%</span>
+            </div>
+            <div id="app-content">
+                <h2>Bienvenido</h2>
+                <p>Toca el boton para una frase motivadora</p>
+                <button onclick="mostrarFrase()" class="magic-botton">Magic Button</button>
+                <p id="display-text">Welcome to my website</p>
+            </div>
+                    <div class="home-button" onclick="irAlInicio()">ir al inicio</div>
+        </div>
     </div>
-    <div id="app-content">
-    <h2>Bienvenido</h2>
-    <p>Toca el boton para una frase motivadora</p>
-    <button onclick="mostrarFrase()">Magic Button</button>
-    <p id="display-text"></p>
-</div>
 
-<div class="home-button" onclick="irAlInicio()"></div>
-    </div>
-
-    <video id="video" width="100%" autoplay style="display: none;" border-radius: 20px;"></video>
+    <video id="video" width="100%" autoplay style="display: none; border-radius: 20px;"></video>
     <button onclick="abrirCamara()">Abrir Camara</button>
 
-            <script src="prueba.js"></script>
+        <script src="prueba.js"></script>
 </body>
 </html>
